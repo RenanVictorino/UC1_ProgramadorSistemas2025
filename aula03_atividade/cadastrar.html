@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+</head>
+<body>
+    <h1>Livraria Victorino</h1>
+
+    <a href="./inicial.html">Inicio</a> |
+    <a href="./entrar.html">Entrar</a> |
+    <a href="./cadastrar.html">Cadastrar</a> |
+    <a href="./contato.html">Contato</a>
+
+    <hr>
+
+    <h2>Cadastre-se</h2>
+
+    <p>Crie uma conta para poder comprar nossos livros e aproveitar nossas promoções</p>
+    <p>Você já tem uma conta? Acesse o seu painel, <a href="./entrar.html"><u>clique aqui.</u></a></p>
+
+    <h4>Informações pessoais</h4>
+
+    <form action="./parabens.html" >
+        <p>Nome completo<br><input type="text"></p>
+        <p>Data de nascimento<br><input type="date"></p>
+        <p>Endereço<br><input type="text" placeholder="Rua"> <input type="number" placeholder="Número"> <input type="text" placeholder="Bairro" ></p>
+        <br>
+        <h4>Você está se cadastrando para:</h4>
+
+        <input type="radio" name="tipo" value="comprar" checked> Comprar livros<br>
+        <input type="radio" name="tipo" value="vender"> Vender livros<br>
+        <input type="radio" name="tipo" value="vender"> Trocar livros
+        
+        <h4>Dados de login</h4>
+        <p>E-mail<br><input type="email" required></p>
+        <p>Senha<br><input type="password" required minlength="8"></p>
+        <p><input type="checkbox"> Quero receber promoçoes no meu e-mail</p>
+        <button>Salvar e continuar <a href="./parabens.html"></a> </button>
+
+    </form>
+
+</body>
+</html>
