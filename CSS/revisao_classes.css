@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+    color: #333; /* deixar apenas 3 quando for repetir | #454545 tambem é uma cor legal */
+    margin: 0;
+}
+
+.linksMenu a{ /* dentro dos seletores podemos "varrer" o necessario e aplicar a alteração onde quiser */
+    color: #656565;
+    text-decoration:none; /* remove o sublinhado */    
+    margin-right: 10px; /* adiciona espaço entre os links */
+    font-size: 12px;
+}
+
+.linksMenu a:hover{ /* modifica quando passar o mouse em cima do link */
+    text-decoration:underline; /* adiciona o sublinhado quando passar o mouse */
+    color: black; /* muda a cor do link quando passar o mouse */
+}
+
+.fundoAbertura{
+    /* background: linear-gradient(90deg,rgba(111, 104, 176, 1) 0%, rgba(83, 83, 184, 1) 35%, rgba(128, 192, 217, 1) 100%); https://cssgradient.io/ | site para gradiente do css */
+    padding: 200px 180px; /* */
+    background-image: url('./microsoft fundo.avif');
+    cursor: pointer;
+}
+.fundoAbertura:hover{
+}
+
+.fundoAbertura p {
+    width: 600px;
+}   
+
+.fundoAbertura h2{
+    font-size: 30px;
+}
+
+.botaoPrincipal{
+    background: #0867B8;
+    color: white;
+    font-size: 20px;
+    border:none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.botaoPrincipal:hover{
+    background: #075DA6;
+    transition: 0.3s;
+}
+
+.cardProduto{
+    width: 350px;
+    border: 1px solid #ccc; /* Adiciona uma borda ao redor do card */
+    box-shadow: 1px 2px 3px #eee;
+    margin-left: 90px; 
+    margin-top:50px;
+}
+
+.cardConteudo{
+    padding: 15px;
+}
