@@ -58,7 +58,35 @@ body{
     margin-left: 90px; 
     margin-top:50px;
 }
+.cardProduto button{/* pode chamar uma aplicação, dentro de outra (ex: .cardProduto .botaoPrincipal)*/
+    width: 100%;
+    padding: 10px 1px;
+}
 
 .cardConteudo{
     padding: 15px;
+}
+.cardTitulo{
+    font-size: 30px;
+    font-weight: bold; /* weight= peso da fonte | bold= Negrito | Alteração de 0 a 900 */
+    margin-bottom: 10px;
+    margin: 0;
+}
+.menuFlex{
+    display: flex;
+    align-items:start;
+    
+}
+.menuInicial{
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    margin-top: 20px;
+
+}
+.linksMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Espaçamento inferior */
 }

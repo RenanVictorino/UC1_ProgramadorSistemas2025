@@ -1,0 +1,18 @@
+.menu{
+    display: flex ;/* display é a forma em que será exibida | flex= fica um do lado do outro | block= padrão | none= oculta o item */
+    flex-direction: row; /* row= horizontal | column= vertical */
+    justify-content:space-between; /* justify-content= alinha os itens | center= centraliza | end= alinha a direita | space-between= espaça os itens */
+    align-items: center; /* alinha os itens verticalmente | flex-start= alinha no topo | flex-end= alinha na base */
+    
+}
+.itensMenu{
+    display: flex;
+    justify-content:space-between; /* justify-content= alinha os itens | center= centraliza | end= alinha a direita | space-between= espaça os itens */
+    gap: 20px; /* gap= espaçamento entre os itens | Só funciona com FLEX */
+}
+.configMenu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
