@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+    color: #333; /* deixar apenas 3 quando for repetir | #454545 tambem é uma cor legal */
+    margin: 0;
+}
+.menuPrimeiro{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    align-items: center;
+    margin: 0;
+}
+.menuSegundo{
+   display: flex;
+}
+.menuSegundo p{
+    margin-right: 20px;
+}
+.menuTerceiro{
+    
+}
+.menuPrincipal{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    margin: 0;
+    border-top: #ccc solid 1px;
+
+}
+.menuLinks a{
+    text-decoration: none;
+}
+.home a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.banner{
+    background-image: url('https://forbes.com.br/wp-content/uploads/2020/11/Forbeslife_mansa%CC%83oMiami_praia_051120_Divulgac%CC%A7a%CC%83o.jpg');
+    background-size: cover;
+    padding: 200px 180px;
+}
+.banner p{
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+.nomeBanner p{
+    color: black;
+}
