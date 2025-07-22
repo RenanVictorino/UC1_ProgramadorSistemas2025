@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs JavaScript</title>
+
+</head>
+<body>
+    
+    <script>
+        
+        let nome
+        let sobrenome
+        let nomeCompleto
+
+        nome = prompt("Digite o nome do funcionário:")
+        sobrenome = prompt("Digite o sobrenome")
+        
+        nomeCompleto = nome + " " + sobrenome
+
+        alert("Seja bem vindo(a) " + nomeCompleto)
+
+        let salario
+        salario = prompt("Digite o salario de " + nome)
+        salario = parseInt(salario) // parseInt= Converte o texto em inteiro (Recebe ela mesmo convertida em numerop)
+
+        let bonificacao
+        bonificacao = prompt("Digite o valor da bonificação: ")
+        bonificacao = parseInt(bonificacao)
+
+        const total = salario + bonificacao
+        
+
+        alert("O total do salario de " + nomeCompleto + " será de R$: " + total + ",00")
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>
