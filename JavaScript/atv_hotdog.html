@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade HotDog</title>
+</head>
+<body>
+
+    <h1>Carrinho de Cachorro quente</h1>
+
+
+    <script>
+
+        const pao = 1.15, batata_palha = 0.95
+
+        let salsicha, pure_batata, salada
+        let dog_simples, dog_duplo, dog_especial
+        
+        salsicha = prompt("Quanto custa a Salsicha ?")
+        salsicha = parseFloat(salsicha)
+
+        pure_batata = prompt("Quanto custa o Pure de Batata ?")
+        pure_batata = parseFloat(pure_batata)
+
+        salada = prompt("Quanto custa a Salada ?")
+        salada = parseFloat(salada)
+
+        dog_simples = salsicha + pure_batata + pao + batata_palha
+        dog_duplo = (salsicha*2) + pure_batata + salada + pao + batata_palha
+        dog_especial = (salsicha*3) + (pure_batata*2) + salada + pao + batata_palha
+
+        alert("Cardápio \n" + 
+        "Dog Simples: R$ " + dog_simples.toFixed(2) + 
+        "\nDog Duplo: R$ " + dog_duplo.toFixed(2) + 
+        "\nDog Especial: R$ " + dog_especial.toFixed(2))
+
+    </script>
+    
+</body>
+</html>
