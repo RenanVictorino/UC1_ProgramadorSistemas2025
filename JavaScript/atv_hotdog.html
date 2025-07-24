@@ -9,31 +9,77 @@
 
     <h1>Carrinho de Cachorro quente</h1>
 
+    <p>Digite o valor da Salsicha: </p>
+    <input id="salsicha" type="text">
+
+    <p>Digite o valor do Purê de Batata:</p>
+    <input id="pure_batata" type="text">
+
+    <p>Digite o valor da Salada: </p>
+    <input id="salada" type="text">
+
+    <br><br>
+    <button id="atualizarCardapio" onclick="atualizarCardapio()">Atualizar Cardápio</button>
+
+    <hr>
+    <h2>Cardápio</h2>
+
+    <ul>
+        <li>Dog Simples: <strong><span id="dogSimples" >...</span></strong></li>
+        <li>Dog duplo: <strong><span id="dogDuplo" >...</span></strong></li>
+        <li>Dog especial: <strong><span id="dogEspecial" >...</span></strong> </li>
+    </ul>
+
 
     <script>
-
-        const pao = 1.15, batata_palha = 0.95
 
         let salsicha, pure_batata, salada
         let dog_simples, dog_duplo, dog_especial
         
-        salsicha = prompt("Quanto custa a Salsicha ?")
-        salsicha = parseFloat(salsicha)
+        
+        // salsicha = prompt("Quanto custa a Salsicha ?")
+        // salsicha = parseFloat(salsicha)
+        
+        // pure_batata = prompt("Quanto custa o Pure de Batata ?")
+        // pure_batata = parseFloat(pure_batata)
+        
+        // salada = prompt("Quanto custa a Salada ?")
+        // salada = parseFloat(salada)
+        
+        
+        //    alert("Cardápio \n" + 
+        //     "Dog Simples: R$ " + dog_simples.toFixed(2) + 
+        //     "\nDog Duplo: R$ " + dog_duplo.toFixed(2) + 
+        //     "\nDog Especial: R$ " + dog_especial.toFixed(2)
+        
+        function atualizarCardapio(){
+            
+            salsicha = document.querySelector("#salsicha").value
+            salsicha = parseFloat(salsicha)
+            
+            pure_batata = document.querySelector("#pure_batata").value
+            pure_batata = parseFloat(pure_batata)
+            
+            salada = document.querySelector("#salada").value
+            salada = parseFloat(salada)
 
-        pure_batata = prompt("Quanto custa o Pure de Batata ?")
-        pure_batata = parseFloat(pure_batata)
+            const pao = 1.15, batata_palha = 0.95
+            
+            dog_simples = salsicha + pure_batata + pao + batata_palha
+            dog_duplo = (salsicha*2) + pure_batata + salada + pao + batata_palha
+            dog_especial = (salsicha*3) + (pure_batata*2) + salada + pao + batata_palha
+            
+            document.querySelector("#salsicha").value = " " 
+            document.querySelector("#pure_batata").value = " " 
+            document.querySelector("#salada").value = " " 
+            
+            document.querySelector("#dogSimples").innerHTML = dog_simples.toFixed(2)
+            document.querySelector("#dogDuplo").innerHTML = dog_duplo.toFixed(2)
+            document.querySelector("#dogEspecial").innerHTML = dog_especial.toFixed(2)
+            
+        }
 
-        salada = prompt("Quanto custa a Salada ?")
-        salada = parseFloat(salada)
 
-        dog_simples = salsicha + pure_batata + pao + batata_palha
-        dog_duplo = (salsicha*2) + pure_batata + salada + pao + batata_palha
-        dog_especial = (salsicha*3) + (pure_batata*2) + salada + pao + batata_palha
-
-        alert("Cardápio \n" + 
-        "Dog Simples: R$ " + dog_simples.toFixed(2) + 
-        "\nDog Duplo: R$ " + dog_duplo.toFixed(2) + 
-        "\nDog Especial: R$ " + dog_especial.toFixed(2))
 
     </script>
     

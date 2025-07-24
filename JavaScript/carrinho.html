@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+
+</head>
+<body>
+    
+    <h1>Carrinho</h1>
+    <p>Este é o seu carrinho de compras da loja</p>
+    <p>Quantidade de itens no carrinho <span id="itensCarrinho" >0</span> </p>
+    <button onclick="adicionarCarrinho()" >Adicionar</button>
+    <button onclick="limparCarrinho()" >Limpar</button>
+    <button onclick="removerCarrinho()" >Remover</button>
+    <button onclick="verCarrinho()" >Ver Carrinho</button>
+    
+    <script>
+        // variavel com _ underline | separação com maiuscula em Funcção
+        // Programação geralmente usado TUDO em ingles
+ 
+        // Variavel Global
+        let carrinho = 0
+ 
+        function adicionarCarrinho(){
+           // carrinho = 1 + carrinho // recebe ele mesmo + 1
+           // carrinho += 1 // Operador +=
+           carrinho++ // aumenta de 1 em 1 
+            document.querySelector("#itensCarrinho").innerHTML = carrinho
+        }
+
+        function verCarrinho(){
+            alert("Itens no Carrinho: " + carrinho)
+        }
+
+        function limparCarrinho(){
+            carrinho = 0
+            document.querySelector("#itensCarrinho").innerHTML = carrinho
+        }
+
+        function removerCarrinho(){
+            // carrinho = carrinho + -1 // remove de 1 em 1
+            carrinho--
+            document.querySelector("#itensCarrinho").innerHTML = carrinho
+        }
+
+        
+
+    </script>
+
+<!-- Variavel dentro da função, só existe dentro da função -->
+<!-- Adcionar variavel fora da função (variavel Global) -->
+<!-- let apenas cria a variavel, depois disso apenas utiliza o nome da variavel para executar ações -->
+
+</body>
+</html>

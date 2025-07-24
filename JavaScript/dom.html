@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipular HTML via JavaScript usando o DOM.</title>
+
+</head>
+<body>
+    
+    <h1>DOM</h1>
+    <p>Manipular HTML via JavaScript usando o DOM.</p>
+
+    <p>Digite seu nome:</p>
+    <input id="inputNome" type="text" placeholder="Digite seu nome"> <!-- id só pode ter um com o mesmo nome-->
+    <button onclick="salvar()" >Salvar</button>
+
+    <p>Seja bem-vindo(a) <span id="textoNome" >...</span></p>
+    
+    <script>
+
+        function salvar(){
+            let nome = document.querySelector("#inputNome").value
+            //document esta pegando todo o HTML | Query = falar sobre um pedaço de um comando | Selector= seleçao HTML 
+            //# = id | value = É o texto que a pessoa escreveu | ***** Adicionar tudo isso dentro de uma variavel *****
+
+            document.querySelector("#inputNome").value = " " 
+            //altera o valor do input para 0
+
+            document.querySelector("#textoNome").innerHTML = nome 
+            // inner = oque esta dentro | innerHTML = modifica um ponto no HTML | nome = recebe o valor ou texto que quer trocar
+        }
+
+
+    </script>
+
+
+
+
+<!-- Tudo ensinado aqui sera diferente em React -->
+</body>
+</html>
