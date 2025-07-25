@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom CSS</title>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+</head>
+<body>
+    
+    <div id="inicial" class="animate__animated animate__fadeIn"> <!-- classe basica para formatacao-->
+        <h1>Cadastro</h1>
+        
+        <button onclick="mostrarUsuario()" >Cadastro de usuario</button>
+        <br><br>
+        <button onclick="mostrarEmpresa()" >Cadastro de empresa</button>
+    </div>
+
+    <div id="usuario" >
+        <hr>
+        <h2>Usuários</h2>
+        <p>Este é o cadastro de usuários</p>
+        <button onclick="voltar()" >Voltar</button>
+    </div>
+    <div id="empresa" >
+        <hr>
+        <h2>Empresa</h2>
+        <p>Este é o cadastro de uma empresa</p>
+        <button onclick="voltar()" >Voltar</button>
+    </div>
+
+
+    <script>
+
+        // o script sempre roda 1 vez logo que abre a pagina
+
+        esconderTodos()
+        mostrarInicio()
+            
+        function esconderTodos(){
+            //style = indicar qual estilo vai ser alterado
+            document.querySelector("#usuario").style.display = "none" 
+
+            // quando o estilo tiver palavra composta, pode alterar deixando a segunda palvra em Maiuscula
+            // document.querySelector("#usuario").style.background = "yellow" 
+
+            // document.querySelector("#usuario").style.fontSize = "20px"
+            document.querySelector("#empresa").style.display = "none"
+            document.querySelector("#inicial").style.display = "none"
+         
+        }
+
+        function mostrarInicio(){
+            document.querySelector("#inicial").style.display = "block"
+        }
+
+        function mostrarUsuario(){
+            esconderTodos()
+            document.querySelector("#usuario").style.display = "block" 
+        }
+
+        function voltar(){
+            esconderTodos()
+            mostrarInicio()
+        }
+
+        function mostrarEmpresa(){
+             esconderTodos()
+            document.querySelector("#empresa").style.display = "block"
+        }
+
+    </script>
+
+</body>
+</html>

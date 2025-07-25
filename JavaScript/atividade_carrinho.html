@@ -8,7 +8,7 @@
 </head>
 <body>
     
-    <h1>Renanzito Market</h1>
+    <h1>Renanzito Marketito</h1>
 
     <hr>
     <p>Arroz - R$ 15,90</p>
@@ -24,6 +24,10 @@
     <button onclick="limparCarrinho()" >Limpar Carrinho</button>
 
     <script>
+        let itens_carrinho, total_arroz, total_feijao, total_compra
+        let item_arroz = 0, item_feijao = 0
+        
+        const arroz = 15.90, feijao = 11.40
 
          function adicionarArroz(){
             item_arroz++
@@ -40,10 +44,6 @@
             item_feijao--
         }
         
-        let itens_carrinho, total_arroz, total_feijao, total_compra
-        let item_arroz = 0, item_feijao = 0
-        
-        let arroz = 15.90, feijao = 11.40
         
         
         

@@ -53,6 +53,7 @@
         //     "\nDog Especial: R$ " + dog_especial.toFixed(2)
         
         function atualizarCardapio(){
+            const pao = 1.15, batata_palha = 0.95
             
             salsicha = document.querySelector("#salsicha").value
             salsicha = parseFloat(salsicha)
@@ -63,7 +64,6 @@
             salada = document.querySelector("#salada").value
             salada = parseFloat(salada)
 
-            const pao = 1.15, batata_palha = 0.95
             
             dog_simples = salsicha + pure_batata + pao + batata_palha
             dog_duplo = (salsicha*2) + pure_batata + salada + pao + batata_palha
