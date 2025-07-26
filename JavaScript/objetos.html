@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    
+    <h1>Objetos</h1>
+
+    <input id="inputNome" placeholder="Digite o nome: "/>
+    <br>
+    <input id="inputSenha" placeholder="Digite a senha: "/>
+    <br>
+    <input id="inputEmail" placeholder="Digite o email: "/>
+
+
+    <p>Como criar um objeto JSON em JavaScript</p>
+    <button onclick="salvar()" >Criar</button>
+
+    <!--  -->
+    <script>
+
+        // Objeto de usuario
+        let usuario = {
+            id: 0,
+            nome: "",
+            senha: "",
+            email: "",
+            criado_em: "",
+            ativo: true
+        }
+
+        function salvar(){
+
+            // Popular o objeto de acordo com os dados dos inputs
+            usuario.nome = document.querySelector("#inputNome").value
+            usuario.senha = document.querySelector("#inputSenha").value
+            usuario.email = document.querySelector("#inputEmail").value
+
+            // Adicionar os ocultos (dados de controle)
+
+            usuario.id = 1
+            usuario.criado_em = new Date()
+            
+            // Mostrar os dados no console
+            console.log(usuario)
+
+           document.querySelector("#inputNome").value = ""
+           document.querySelector("#inputSenha").value = ""
+           document.querySelector("#inputEmail").value = ""
+
+
+        }
+
+    </script>
+
+</body>
+</html>
